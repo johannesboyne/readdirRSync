@@ -1,0 +1,21 @@
+{
+  "name": "readdirRSync",
+  "version": "0.0.1",
+  "description": "Synchronous, recursive readdir. Returns an array of (full) filepaths.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": "",
+  "keywords": [
+    "sync",
+    "recursive",
+    "readdir",
+    "recursive",
+    "readdir",
+    "readdir",
+    "-r"
+  ],
+  "author": "Johannes Boyne <johannes@boyne.de>",
+  "license": "MIT"
+}
