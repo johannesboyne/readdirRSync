@@ -5,7 +5,7 @@ Synchronous, recursive readdir. Returns an array of (full) filepaths.
 ## Example Usage
 
 ```(javascript)
-var readdirRSync = require('readdirRSync');
+var readdirrsync = require('readdirrsync');
 
 var dirStructure = readdirRSync(__dirname + '/testdir'); // return type: Array
 /* dirStructure:
@@ -23,10 +23,10 @@ If it would be asynchronous the sorting of the structure could vary from time to
 Example use case: Generating hashes, there you will always want to put fileX before fileY because otherwise the hash would change!
 
 ```(javascript)
-var readdirRSync = require('readdirRSync');
+var readdirrsync = require('readdirrsync');
 var crypto       = require('crypto');
 var hash         = crypto.createHash('md5');
-var files        = readdirRSync(dirname);
+var files        = readdirrsync(dirname);
 
 for (var i in files) {
   hash.update(fs.readFileSync(files[i]));

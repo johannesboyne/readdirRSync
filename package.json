@@ -1,5 +1,5 @@
 {
-  "name": "readdirRSync",
+  "name": "readdirrsync",
   "version": "0.0.1",
   "description": "Synchronous, recursive readdir. Returns an array of (full) filepaths.",
   "main": "index.js",

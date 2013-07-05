@@ -1,5 +1,5 @@
 var fs = require('fs');
-var readdirRSync = require('../');
+var readdirrsync = require('../');
 
 var testDirPath = __dirname + '/testdir';
 
@@ -12,8 +12,8 @@ fs.mkdirSync(testDirPath + '/subdir');
 fs.writeFileSync(testDirPath + '/subdir/file4.txt', 'hello wolrd 4', 'utf8');
 
 // removing test structure from disk
-// if this works, readdirRSync works as well ;)
-var dirStructure = readdirRSync(testDirPath);
+// if this works, readdirrsync works as well ;)
+var dirStructure = readdirrsync(testDirPath);
 for (var i in dirStructure) {
   fs.unlinkSync(dirStructure[i]);
 }
@@ -22,7 +22,7 @@ try {
   fs.rmdirSync(testDirPath + '/subdir');
   fs.rmdirSync(testDirPath);
 } catch (e) {
-  console.error('readdirRSync::', e);
+  console.error('readdirrsync::', e);
 }
 
 console.log('it workes √');
