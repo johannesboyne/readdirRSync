@@ -6,7 +6,10 @@
   "scripts": {
     "test": "node test/test.js"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/johannesboyne/readdirRSync.git"
+  },
   "keywords": [
     "sync",
     "recursive",
@@ -16,6 +19,10 @@
     "readdir",
     "-r"
   ],
-  "author": "Johannes Boyne <johannes@boyne.de>",
+  "author" : {
+    "name" : "Johannes Boyne",
+    "email" : "johannes@boyne.de",
+    "url" : "http://boyne-developing.de"
+  },
   "license": "MIT"
 }
